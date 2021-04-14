@@ -10,7 +10,7 @@ class qRCodeCog(commands.Cog, name="qrCodeCog"):
 
 
 @commands.command()
-async def qr(ctx, url):
+async def qr(self, ctx, url):
     url1 = pyqrcode.create(url, error='H')
     url1.png("qrcode.png", module_color=(0, 255, 0, 255), background=(0, 0, 0, 255), scale=5)
     await ctx.send(file=discord.File('qrcode.png'))
