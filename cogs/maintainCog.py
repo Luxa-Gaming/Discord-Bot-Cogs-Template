@@ -43,7 +43,7 @@ class maintainCog(commands.Cog, name="MaintainCog"):
     @commands.is_owner()
     async def reload(self, ctx, *, cog: str):
         # Info: 'Prefix + unload cogs.qrcodeCog'
-        #  lädt die Cog neu (deaktivieren + aktivieren) die qrCodeCog, falls du was an den Cogs änderst, den Bot aber nicht neustarten möchtest.
+        #  lädt die Cog neu (deaktivieren + aktivieren), falls du was an den Cogs änderst, den Bot aber nicht neustarten möchtest.
         try:
             self.bot.unload_extension(cog)
             self.bot.load_extension(cog)
