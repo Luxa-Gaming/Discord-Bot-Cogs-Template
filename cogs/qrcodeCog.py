@@ -3,7 +3,7 @@ import pyqrcode
 from discord.ext import commands
 
 
-class qRCodeCog(commands.Cog, name="qrCodeCog"):
+class qrCodeCog(commands.Cog, name="qrCodeCog"):
 
     def __init__(self, bot):
         self.bot = bot
@@ -16,5 +16,5 @@ class qRCodeCog(commands.Cog, name="qrCodeCog"):
 
 
 def setup(bot):
-    bot.add_cog(qRCodeCog(bot))
+    bot.add_cog(qrCodeCog(bot))
     print('QR-Code Cog loaded')
