@@ -9,9 +9,8 @@ import SECRET
 import STATICS
 
 bot = commands.Bot(command_prefix=STATICS.PREFIX, case_insensitive=True)
-
 # Info: Die Zeile hier drunter deaktiviert den eingebauten help Befehl. Um einen eigenen help Befehl nutzen zu können einfach das HashTag für den Kommentar in Zeile 13 entfernen.
-bot.remove_command('help')
+# bot.remove_command('help')
 
 
 # Info: Bot wird gestartet und loggt sich ein.
@@ -29,9 +28,7 @@ async def on_ready():
     # Info: Cogs werden geladen und initialisiert. In die eckigen Klammern trägst du die Cogs ein. Nach dem Schema, wie vorgegeben.
     COGS = [
         'cogs.maintainCog',
-        'cogs.qrcodeCog',
-        'cogs.userinfoCog',
-        'cogs.mongoDB_testCog'
+        'cogs.qrcodeCog'
     ]
 
     if __name__ == '__main__':
